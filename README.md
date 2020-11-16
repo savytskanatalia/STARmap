@@ -11,3 +11,4 @@ nextflow run scripts/star_map.nf -c scripts/star_map.config \\
          --star_index "/my/full/dir/star-index/" \\
          --oufiltmm 1 --winamm 1 --singleEnd
 ```
+If supplied with Star index, runs mapping directly. If supplied with genome gtf+fasta starts with generating genome index first.
