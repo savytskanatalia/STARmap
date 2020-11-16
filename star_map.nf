@@ -17,7 +17,7 @@ def helpMessage() {
     log.info"""
     Usage:
     The typical command for running the pipeline is as follows:
-    nextflow run starmap.nf -c mappers_3_1.config --reads "/absolute/path/to/files/*.fastq.gz" -with-docker savytskanatalia/quantefication2 
+    nextflow run star_map.nf -c star_map.config --reads "/absolute/path/to/files/*.fastq.gz" -with-docker savytskanatalia/quantefication2 ...
     Mandatory arguments:
       --reads [str]                  Path to input data (must be surrounded with quotes). Default: "input/*.fastq.gz" 
       --outdir [str]                 Output directory path. Default: output/       
@@ -70,9 +70,6 @@ wamm=Channel.value(params.winamm)
                                   PREPROCESSING
 ================================================================================
 */
-
-
-// CHECKING IF WE WANT TO MAP ONLY, QUANTIFY ONLY OR MAP AND QUANTIFY
 
 
 
